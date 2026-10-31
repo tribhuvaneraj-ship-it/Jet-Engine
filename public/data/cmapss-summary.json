@@ -1,0 +1,1060 @@
+{
+  "source": {
+    "provider": "Kaggle",
+    "dataset_ref": "behrad3d/nasa-cmaps",
+    "license": "CC0: Public Domain",
+    "description": "NASA C-MAPSS turbofan run-to-failure simulation dataset"
+  },
+  "variant": "FD001",
+  "generated_at_utc": "2026-10-02T07:50:21.787331+00:00",
+  "stats": {
+    "train_rows": 20631,
+    "test_rows": 13096,
+    "train_engines": 100,
+    "test_engines": 100,
+    "sensor_channels": 21,
+    "mae": 21.05,
+    "rmse": 29.32
+  },
+  "model": {
+    "name": "RandomForestRegressor",
+    "features": 46,
+    "seed": 42,
+    "evaluation": "Official C-MAPSS test split with provided RUL labels"
+  },
+  "selected_engine": {
+    "engine_id": 1,
+    "current_cycle": 31,
+    "predicted_rul": 178.0,
+    "benchmark_rul": 112.0,
+    "status": "NORMAL",
+    "history": [
+      {
+        "cycle": 1,
+        "sensor_2": 643.02,
+        "sensor_3": 1585.29,
+        "sensor_4": 1398.21,
+        "sensor_11": 47.2
+      },
+      {
+        "cycle": 2,
+        "sensor_2": 641.71,
+        "sensor_3": 1588.45,
+        "sensor_4": 1395.42,
+        "sensor_11": 47.5
+      },
+      {
+        "cycle": 3,
+        "sensor_2": 642.46,
+        "sensor_3": 1586.94,
+        "sensor_4": 1401.34,
+        "sensor_11": 47.5
+      },
+      {
+        "cycle": 4,
+        "sensor_2": 642.44,
+        "sensor_3": 1584.12,
+        "sensor_4": 1406.42,
+        "sensor_11": 47.28
+      },
+      {
+        "cycle": 5,
+        "sensor_2": 642.51,
+        "sensor_3": 1587.19,
+        "sensor_4": 1401.92,
+        "sensor_11": 47.31
+      },
+      {
+        "cycle": 6,
+        "sensor_2": 642.11,
+        "sensor_3": 1579.12,
+        "sensor_4": 1395.13,
+        "sensor_11": 47.26
+      },
+      {
+        "cycle": 7,
+        "sensor_2": 642.11,
+        "sensor_3": 1583.34,
+        "sensor_4": 1404.84,
+        "sensor_11": 47.31
+      },
+      {
+        "cycle": 8,
+        "sensor_2": 642.54,
+        "sensor_3": 1580.89,
+        "sensor_4": 1400.89,
+        "sensor_11": 47.21
+      },
+      {
+        "cycle": 9,
+        "sensor_2": 641.88,
+        "sensor_3": 1593.29,
+        "sensor_4": 1412.28,
+        "sensor_11": 47.37
+      },
+      {
+        "cycle": 10,
+        "sensor_2": 642.07,
+        "sensor_3": 1585.25,
+        "sensor_4": 1398.64,
+        "sensor_11": 47.14
+      },
+      {
+        "cycle": 11,
+        "sensor_2": 642.04,
+        "sensor_3": 1581.03,
+        "sensor_4": 1403.83,
+        "sensor_11": 47.23
+      },
+      {
+        "cycle": 12,
+        "sensor_2": 642.54,
+        "sensor_3": 1587.43,
+        "sensor_4": 1397.82,
+        "sensor_11": 47.27
+      },
+      {
+        "cycle": 13,
+        "sensor_2": 641.94,
+        "sensor_3": 1589.09,
+        "sensor_4": 1403.94,
+        "sensor_11": 47.35
+      },
+      {
+        "cycle": 14,
+        "sensor_2": 642.23,
+        "sensor_3": 1583.16,
+        "sensor_4": 1402.88,
+        "sensor_11": 47.24
+      },
+      {
+        "cycle": 15,
+        "sensor_2": 642.5,
+        "sensor_3": 1584.81,
+        "sensor_4": 1398.79,
+        "sensor_11": 47.35
+      },
+      {
+        "cycle": 16,
+        "sensor_2": 642.32,
+        "sensor_3": 1584.51,
+        "sensor_4": 1407.76,
+        "sensor_11": 47.39
+      },
+      {
+        "cycle": 17,
+        "sensor_2": 642.19,
+        "sensor_3": 1582.7,
+        "sensor_4": 1404.12,
+        "sensor_11": 47.27
+      },
+      {
+        "cycle": 18,
+        "sensor_2": 642.59,
+        "sensor_3": 1586.53,
+        "sensor_4": 1403.69,
+        "sensor_11": 47.44
+      },
+      {
+        "cycle": 19,
+        "sensor_2": 642.43,
+        "sensor_3": 1585.58,
+        "sensor_4": 1402.3,
+        "sensor_11": 47.25
+      },
+      {
+        "cycle": 20,
+        "sensor_2": 642.61,
+        "sensor_3": 1587.78,
+        "sensor_4": 1400.7,
+        "sensor_11": 47.46
+      },
+      {
+        "cycle": 21,
+        "sensor_2": 642.7,
+        "sensor_3": 1583.3,
+        "sensor_4": 1399.2,
+        "sensor_11": 47.36
+      },
+      {
+        "cycle": 22,
+        "sensor_2": 642.45,
+        "sensor_3": 1582.78,
+        "sensor_4": 1404.06,
+        "sensor_11": 47.26
+      },
+      {
+        "cycle": 23,
+        "sensor_2": 642.12,
+        "sensor_3": 1587.51,
+        "sensor_4": 1395.09,
+        "sensor_11": 47.19
+      },
+      {
+        "cycle": 24,
+        "sensor_2": 642.32,
+        "sensor_3": 1594.29,
+        "sensor_4": 1400.15,
+        "sensor_11": 47.29
+      },
+      {
+        "cycle": 25,
+        "sensor_2": 642.25,
+        "sensor_3": 1582.43,
+        "sensor_4": 1400.23,
+        "sensor_11": 47.37
+      },
+      {
+        "cycle": 26,
+        "sensor_2": 642.48,
+        "sensor_3": 1583.28,
+        "sensor_4": 1408.07,
+        "sensor_11": 47.33
+      },
+      {
+        "cycle": 27,
+        "sensor_2": 642.08,
+        "sensor_3": 1586.65,
+        "sensor_4": 1400.31,
+        "sensor_11": 47.34
+      },
+      {
+        "cycle": 28,
+        "sensor_2": 641.93,
+        "sensor_3": 1594.25,
+        "sensor_4": 1401.29,
+        "sensor_11": 47.05
+      },
+      {
+        "cycle": 29,
+        "sensor_2": 641.95,
+        "sensor_3": 1587.15,
+        "sensor_4": 1398.11,
+        "sensor_11": 47.42
+      },
+      {
+        "cycle": 30,
+        "sensor_2": 642.79,
+        "sensor_3": 1585.72,
+        "sensor_4": 1400.97,
+        "sensor_11": 47.4
+      },
+      {
+        "cycle": 31,
+        "sensor_2": 642.58,
+        "sensor_3": 1581.22,
+        "sensor_4": 1398.91,
+        "sensor_11": 47.23
+      }
+    ]
+  },
+  "fleet": [
+    {
+      "engine_id": 1,
+      "current_cycle": 31,
+      "predicted_rul": 178.0,
+      "benchmark_rul": 112.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 2,
+      "current_cycle": 49,
+      "predicted_rul": 152.5,
+      "benchmark_rul": 98.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 3,
+      "current_cycle": 126,
+      "predicted_rul": 46.1,
+      "benchmark_rul": 69.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 4,
+      "current_cycle": 106,
+      "predicted_rul": 91.4,
+      "benchmark_rul": 82.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 5,
+      "current_cycle": 98,
+      "predicted_rul": 107.9,
+      "benchmark_rul": 91.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 6,
+      "current_cycle": 105,
+      "predicted_rul": 100.2,
+      "benchmark_rul": 93.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 7,
+      "current_cycle": 160,
+      "predicted_rul": 101.7,
+      "benchmark_rul": 91.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 8,
+      "current_cycle": 166,
+      "predicted_rul": 67.5,
+      "benchmark_rul": 95.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 9,
+      "current_cycle": 55,
+      "predicted_rul": 144.0,
+      "benchmark_rul": 111.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 10,
+      "current_cycle": 192,
+      "predicted_rul": 129.0,
+      "benchmark_rul": 96.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 11,
+      "current_cycle": 83,
+      "predicted_rul": 101.7,
+      "benchmark_rul": 97.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 12,
+      "current_cycle": 217,
+      "predicted_rul": 99.1,
+      "benchmark_rul": 124.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 13,
+      "current_cycle": 195,
+      "predicted_rul": 133.5,
+      "benchmark_rul": 95.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 14,
+      "current_cycle": 46,
+      "predicted_rul": 141.6,
+      "benchmark_rul": 107.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 15,
+      "current_cycle": 76,
+      "predicted_rul": 186.9,
+      "benchmark_rul": 83.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 16,
+      "current_cycle": 113,
+      "predicted_rul": 95.4,
+      "benchmark_rul": 84.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 17,
+      "current_cycle": 165,
+      "predicted_rul": 49.1,
+      "benchmark_rul": 50.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 18,
+      "current_cycle": 133,
+      "predicted_rul": 59.1,
+      "benchmark_rul": 28.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 19,
+      "current_cycle": 135,
+      "predicted_rul": 115.0,
+      "benchmark_rul": 87.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 20,
+      "current_cycle": 184,
+      "predicted_rul": 18.3,
+      "benchmark_rul": 16.0,
+      "status": "MONITOR"
+    },
+    {
+      "engine_id": 21,
+      "current_cycle": 148,
+      "predicted_rul": 67.5,
+      "benchmark_rul": 57.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 22,
+      "current_cycle": 39,
+      "predicted_rul": 148.9,
+      "benchmark_rul": 111.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 23,
+      "current_cycle": 130,
+      "predicted_rul": 178.0,
+      "benchmark_rul": 113.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 24,
+      "current_cycle": 186,
+      "predicted_rul": 19.6,
+      "benchmark_rul": 20.0,
+      "status": "MONITOR"
+    },
+    {
+      "engine_id": 25,
+      "current_cycle": 48,
+      "predicted_rul": 149.1,
+      "benchmark_rul": 145.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 26,
+      "current_cycle": 76,
+      "predicted_rul": 120.5,
+      "benchmark_rul": 119.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 27,
+      "current_cycle": 140,
+      "predicted_rul": 94.7,
+      "benchmark_rul": 66.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 28,
+      "current_cycle": 158,
+      "predicted_rul": 79.7,
+      "benchmark_rul": 97.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 29,
+      "current_cycle": 171,
+      "predicted_rul": 100.0,
+      "benchmark_rul": 90.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 30,
+      "current_cycle": 143,
+      "predicted_rul": 70.1,
+      "benchmark_rul": 115.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 31,
+      "current_cycle": 196,
+      "predicted_rul": 11.5,
+      "benchmark_rul": 8.0,
+      "status": "CRITICAL"
+    },
+    {
+      "engine_id": 32,
+      "current_cycle": 145,
+      "predicted_rul": 44.7,
+      "benchmark_rul": 48.0,
+      "status": "MONITOR"
+    },
+    {
+      "engine_id": 33,
+      "current_cycle": 50,
+      "predicted_rul": 145.2,
+      "benchmark_rul": 106.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 34,
+      "current_cycle": 203,
+      "predicted_rul": 4.5,
+      "benchmark_rul": 7.0,
+      "status": "CRITICAL"
+    },
+    {
+      "engine_id": 35,
+      "current_cycle": 198,
+      "predicted_rul": 9.8,
+      "benchmark_rul": 11.0,
+      "status": "CRITICAL"
+    },
+    {
+      "engine_id": 36,
+      "current_cycle": 126,
+      "predicted_rul": 15.3,
+      "benchmark_rul": 19.0,
+      "status": "MONITOR"
+    },
+    {
+      "engine_id": 37,
+      "current_cycle": 121,
+      "predicted_rul": 68.8,
+      "benchmark_rul": 21.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 38,
+      "current_cycle": 125,
+      "predicted_rul": 45.1,
+      "benchmark_rul": 50.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 39,
+      "current_cycle": 37,
+      "predicted_rul": 170.1,
+      "benchmark_rul": 142.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 40,
+      "current_cycle": 133,
+      "predicted_rul": 26.1,
+      "benchmark_rul": 28.0,
+      "status": "MONITOR"
+    },
+    {
+      "engine_id": 41,
+      "current_cycle": 123,
+      "predicted_rul": 49.7,
+      "benchmark_rul": 18.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 42,
+      "current_cycle": 156,
+      "predicted_rul": 20.5,
+      "benchmark_rul": 10.0,
+      "status": "MONITOR"
+    },
+    {
+      "engine_id": 43,
+      "current_cycle": 172,
+      "predicted_rul": 69.4,
+      "benchmark_rul": 59.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 44,
+      "current_cycle": 54,
+      "predicted_rul": 132.9,
+      "benchmark_rul": 109.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 45,
+      "current_cycle": 152,
+      "predicted_rul": 67.3,
+      "benchmark_rul": 114.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 46,
+      "current_cycle": 146,
+      "predicted_rul": 41.8,
+      "benchmark_rul": 47.0,
+      "status": "MONITOR"
+    },
+    {
+      "engine_id": 47,
+      "current_cycle": 73,
+      "predicted_rul": 120.4,
+      "benchmark_rul": 135.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 48,
+      "current_cycle": 78,
+      "predicted_rul": 124.7,
+      "benchmark_rul": 92.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 49,
+      "current_cycle": 303,
+      "predicted_rul": 26.9,
+      "benchmark_rul": 21.0,
+      "status": "MONITOR"
+    },
+    {
+      "engine_id": 50,
+      "current_cycle": 74,
+      "predicted_rul": 108.5,
+      "benchmark_rul": 79.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 51,
+      "current_cycle": 144,
+      "predicted_rul": 79.5,
+      "benchmark_rul": 114.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 52,
+      "current_cycle": 189,
+      "predicted_rul": 36.0,
+      "benchmark_rul": 29.0,
+      "status": "MONITOR"
+    },
+    {
+      "engine_id": 53,
+      "current_cycle": 164,
+      "predicted_rul": 34.0,
+      "benchmark_rul": 26.0,
+      "status": "MONITOR"
+    },
+    {
+      "engine_id": 54,
+      "current_cycle": 121,
+      "predicted_rul": 127.4,
+      "benchmark_rul": 97.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 55,
+      "current_cycle": 113,
+      "predicted_rul": 145.8,
+      "benchmark_rul": 137.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 56,
+      "current_cycle": 136,
+      "predicted_rul": 12.7,
+      "benchmark_rul": 15.0,
+      "status": "CRITICAL"
+    },
+    {
+      "engine_id": 57,
+      "current_cycle": 160,
+      "predicted_rul": 84.9,
+      "benchmark_rul": 103.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 58,
+      "current_cycle": 176,
+      "predicted_rul": 41.9,
+      "benchmark_rul": 37.0,
+      "status": "MONITOR"
+    },
+    {
+      "engine_id": 59,
+      "current_cycle": 94,
+      "predicted_rul": 154.8,
+      "benchmark_rul": 114.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 60,
+      "current_cycle": 147,
+      "predicted_rul": 68.2,
+      "benchmark_rul": 100.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 61,
+      "current_cycle": 159,
+      "predicted_rul": 43.8,
+      "benchmark_rul": 21.0,
+      "status": "MONITOR"
+    },
+    {
+      "engine_id": 62,
+      "current_cycle": 232,
+      "predicted_rul": 60.1,
+      "benchmark_rul": 54.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 63,
+      "current_cycle": 155,
+      "predicted_rul": 50.5,
+      "benchmark_rul": 72.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 64,
+      "current_cycle": 168,
+      "predicted_rul": 39.5,
+      "benchmark_rul": 28.0,
+      "status": "MONITOR"
+    },
+    {
+      "engine_id": 65,
+      "current_cycle": 71,
+      "predicted_rul": 177.4,
+      "benchmark_rul": 128.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 66,
+      "current_cycle": 147,
+      "predicted_rul": 15.4,
+      "benchmark_rul": 14.0,
+      "status": "MONITOR"
+    },
+    {
+      "engine_id": 67,
+      "current_cycle": 71,
+      "predicted_rul": 166.5,
+      "benchmark_rul": 77.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 68,
+      "current_cycle": 187,
+      "predicted_rul": 11.7,
+      "benchmark_rul": 8.0,
+      "status": "CRITICAL"
+    },
+    {
+      "engine_id": 69,
+      "current_cycle": 54,
+      "predicted_rul": 145.9,
+      "benchmark_rul": 121.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 70,
+      "current_cycle": 152,
+      "predicted_rul": 64.7,
+      "benchmark_rul": 94.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 71,
+      "current_cycle": 68,
+      "predicted_rul": 128.4,
+      "benchmark_rul": 118.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 72,
+      "current_cycle": 131,
+      "predicted_rul": 70.4,
+      "benchmark_rul": 50.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 73,
+      "current_cycle": 112,
+      "predicted_rul": 134.4,
+      "benchmark_rul": 131.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 74,
+      "current_cycle": 137,
+      "predicted_rul": 76.0,
+      "benchmark_rul": 126.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 75,
+      "current_cycle": 88,
+      "predicted_rul": 143.4,
+      "benchmark_rul": 113.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 76,
+      "current_cycle": 205,
+      "predicted_rul": 9.7,
+      "benchmark_rul": 10.0,
+      "status": "CRITICAL"
+    },
+    {
+      "engine_id": 77,
+      "current_cycle": 162,
+      "predicted_rul": 41.6,
+      "benchmark_rul": 34.0,
+      "status": "MONITOR"
+    },
+    {
+      "engine_id": 78,
+      "current_cycle": 72,
+      "predicted_rul": 188.3,
+      "benchmark_rul": 107.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 79,
+      "current_cycle": 101,
+      "predicted_rul": 102.3,
+      "benchmark_rul": 63.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 80,
+      "current_cycle": 133,
+      "predicted_rul": 88.4,
+      "benchmark_rul": 90.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 81,
+      "current_cycle": 213,
+      "predicted_rul": 6.5,
+      "benchmark_rul": 8.0,
+      "status": "CRITICAL"
+    },
+    {
+      "engine_id": 82,
+      "current_cycle": 162,
+      "predicted_rul": 11.8,
+      "benchmark_rul": 9.0,
+      "status": "CRITICAL"
+    },
+    {
+      "engine_id": 83,
+      "current_cycle": 73,
+      "predicted_rul": 148.7,
+      "benchmark_rul": 137.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 84,
+      "current_cycle": 172,
+      "predicted_rul": 55.2,
+      "benchmark_rul": 58.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 85,
+      "current_cycle": 34,
+      "predicted_rul": 151.8,
+      "benchmark_rul": 118.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 86,
+      "current_cycle": 110,
+      "predicted_rul": 104.5,
+      "benchmark_rul": 89.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 87,
+      "current_cycle": 56,
+      "predicted_rul": 122.2,
+      "benchmark_rul": 116.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 88,
+      "current_cycle": 68,
+      "predicted_rul": 132.7,
+      "benchmark_rul": 115.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 89,
+      "current_cycle": 177,
+      "predicted_rul": 81.3,
+      "benchmark_rul": 136.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 90,
+      "current_cycle": 146,
+      "predicted_rul": 19.9,
+      "benchmark_rul": 28.0,
+      "status": "MONITOR"
+    },
+    {
+      "engine_id": 91,
+      "current_cycle": 234,
+      "predicted_rul": 20.2,
+      "benchmark_rul": 38.0,
+      "status": "MONITOR"
+    },
+    {
+      "engine_id": 92,
+      "current_cycle": 150,
+      "predicted_rul": 16.1,
+      "benchmark_rul": 20.0,
+      "status": "MONITOR"
+    },
+    {
+      "engine_id": 93,
+      "current_cycle": 244,
+      "predicted_rul": 43.7,
+      "benchmark_rul": 85.0,
+      "status": "MONITOR"
+    },
+    {
+      "engine_id": 94,
+      "current_cycle": 133,
+      "predicted_rul": 56.0,
+      "benchmark_rul": 55.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 95,
+      "current_cycle": 89,
+      "predicted_rul": 115.2,
+      "benchmark_rul": 128.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 96,
+      "current_cycle": 97,
+      "predicted_rul": 146.5,
+      "benchmark_rul": 137.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 97,
+      "current_cycle": 134,
+      "predicted_rul": 83.1,
+      "benchmark_rul": 82.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 98,
+      "current_cycle": 121,
+      "predicted_rul": 77.7,
+      "benchmark_rul": 59.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 99,
+      "current_cycle": 97,
+      "predicted_rul": 139.7,
+      "benchmark_rul": 117.0,
+      "status": "NORMAL"
+    },
+    {
+      "engine_id": 100,
+      "current_cycle": 198,
+      "predicted_rul": 18.9,
+      "benchmark_rul": 20.0,
+      "status": "MONITOR"
+    }
+  ],
+  "channel_stats": {
+    "sensor_1": {
+      "min": 518.67,
+      "max": 518.67,
+      "mean": 518.67
+    },
+    "sensor_2": {
+      "min": 641.21,
+      "max": 644.53,
+      "mean": 642.68093
+    },
+    "sensor_3": {
+      "min": 1571.04,
+      "max": 1616.91,
+      "mean": 1590.52312
+    },
+    "sensor_4": {
+      "min": 1382.25,
+      "max": 1441.49,
+      "mean": 1408.93378
+    },
+    "sensor_5": {
+      "min": 14.62,
+      "max": 14.62,
+      "mean": 14.62
+    },
+    "sensor_6": {
+      "min": 21.6,
+      "max": 21.61,
+      "mean": 21.6098
+    },
+    "sensor_7": {
+      "min": 549.85,
+      "max": 556.06,
+      "mean": 553.36771
+    },
+    "sensor_8": {
+      "min": 2387.9,
+      "max": 2388.56,
+      "mean": 2388.09665
+    },
+    "sensor_9": {
+      "min": 9021.73,
+      "max": 9244.59,
+      "mean": 9065.24294
+    },
+    "sensor_10": {
+      "min": 1.3,
+      "max": 1.3,
+      "mean": 1.3
+    },
+    "sensor_11": {
+      "min": 46.85,
+      "max": 48.53,
+      "mean": 47.54117
+    },
+    "sensor_12": {
+      "min": 518.69,
+      "max": 523.38,
+      "mean": 521.41347
+    },
+    "sensor_13": {
+      "min": 2387.88,
+      "max": 2388.56,
+      "mean": 2388.09615
+    },
+    "sensor_14": {
+      "min": 8099.94,
+      "max": 8293.72,
+      "mean": 8143.75272
+    },
+    "sensor_15": {
+      "min": 8.3249,
+      "max": 8.5848,
+      "mean": 8.44215
+    },
+    "sensor_16": {
+      "min": 0.03,
+      "max": 0.03,
+      "mean": 0.03
+    },
+    "sensor_17": {
+      "min": 388.0,
+      "max": 400.0,
+      "mean": 393.21065
+    },
+    "sensor_18": {
+      "min": 2388.0,
+      "max": 2388.0,
+      "mean": 2388.0
+    },
+    "sensor_19": {
+      "min": 100.0,
+      "max": 100.0,
+      "mean": 100.0
+    },
+    "sensor_20": {
+      "min": 38.14,
+      "max": 39.43,
+      "mean": 38.81627
+    },
+    "sensor_21": {
+      "min": 22.8942,
+      "max": 23.6184,
+      "mean": 23.28971
+    }
+  }
+}

@@ -1,0 +1,105 @@
+flowchart LR
+    %% Predictive Maintenance for Jet Engine Failures
+
+    subgraph Sources[Data Sources]
+        RAW["NASA C-MAPSS raw files\ntrain / test / RUL"]
+        UPLOAD["Engine history upload\nor API payload"]
+    end
+
+    subgraph Data[Data & Feature Layer]
+        INGEST["Ingestion & schema validation\ncolumn mapping, types, quality report"]
+        LABELS["RUL label generation\nmax cycle - current cycle"]
+        CLEAN["Cleaning & normalization\nmissing values, scaling, sensor selection"]
+        FEAT["Causal time-series features\nrolling stats, lags, deltas, trends"]
+        SPLIT["Engine-level split\ntrain / validation / holdout"]
+    end
+
+    subgraph Train[Training & Evaluation]
+        BASE["Baseline models\nLinear Regression / Random Forest"]
+        XGB["Primary candidate\nXGBoost Regressor"]
+        SEQ["Optional experiment\nLSTM / GRU sequence model"]
+        EVAL["Evaluation & diagnostics\nMAE, RMSE, plots, error by RUL band"]
+        SELECT["Model selection\nquality + latency + interpretability"]
+    end
+
+    subgraph Registry[Artifact & Configuration Store]
+        ART["Versioned model artifact\npreprocessing + estimator"]
+        META["Metadata & release files\nfeature schema, config, metrics"]
+        CFG["Runtime configuration\nthresholds, paths, active version"]
+    end
+
+    subgraph Serving[Serving Layer]
+        API["FastAPI prediction service\n/v1/predict, /health, /metadata"]
+        VALIDATE["Pydantic validation\nrange checks, history checks"]
+        PREDICT["Feature parity + inference\nRUL estimate + warnings"]
+        STATUS["Maintenance status\nNORMAL / MONITOR / CRITICAL"]
+    end
+
+    subgraph UX[User Experience]
+        DASH["Streamlit dashboard"]
+        INPUT["Engine input & history"]
+        RESULT["RUL card, status, warnings"]
+        CHARTS["Sensor trends & model metrics"]
+    end
+
+    subgraph Ops[Quality & Operations]
+        TESTS["Unit, integration & leakage tests"]
+        LOGS["Structured logs & request IDs"]
+        DOCKER["Docker / deployment runtime"]
+        DISCLAIMER["Research-use disclaimer\nnot certified aviation guidance"]
+    end
+
+    RAW --> INGEST
+    INGEST --> LABELS
+    INGEST --> CLEAN
+    LABELS --> CLEAN
+    CLEAN --> FEAT
+    FEAT --> SPLIT
+    SPLIT --> BASE
+    SPLIT --> XGB
+    SPLIT --> SEQ
+    BASE --> EVAL
+    XGB --> EVAL
+    SEQ --> EVAL
+    EVAL --> SELECT
+    SELECT --> ART
+    SELECT --> META
+    CFG --> API
+    ART --> API
+    META --> API
+
+    UPLOAD --> API
+    API --> VALIDATE
+    VALIDATE --> PREDICT
+    PREDICT --> STATUS
+    STATUS --> RESULT
+
+    DASH --> INPUT
+    INPUT --> UPLOAD
+    API --> RESULT
+    API --> CHARTS
+    DASH --> CHARTS
+    DASH --> DISCLAIMER
+    API --> DISCLAIMER
+
+    TESTS -. validates .-> INGEST
+    TESTS -. validates .-> FEAT
+    TESTS -. validates .-> API
+    LOGS -. observes .-> API
+    DOCKER -. packages .-> API
+
+    classDef source fill:#E8F1FB,stroke:#2B6CB0,color:#102A43
+    classDef data fill:#E6FFFA,stroke:#2C7A7B,color:#163B3D
+    classDef train fill:#FEF3C7,stroke:#B7791F,color:#4A3410
+    classDef registry fill:#F3E8FF,stroke:#805AD5,color:#322659
+    classDef serving fill:#FDE2E2,stroke:#C53030,color:#4A1616
+    classDef ux fill:#E9D8FD,stroke:#805AD5,color:#322659
+    classDef ops fill:#EDF2F7,stroke:#4A5568,color:#1A202C
+
+    class RAW,UPLOAD source
+    class INGEST,LABELS,CLEAN,FEAT,SPLIT data
+    class BASE,XGB,SEQ,EVAL,SELECT train
+    class ART,META,CFG registry
+    class API,VALIDATE,PREDICT,STATUS serving
+    class DASH,INPUT,RESULT,CHARTS,DISCLAIMER ux
+    class TESTS,LOGS,DOCKER ops
